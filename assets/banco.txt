@@ -1,0 +1,54 @@
+CREATE DATABASE `escola` /*!40100 DEFAULT CHARACTER SET utf8mb4 */;
+
+CREATE TABLE `cadaluno` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `nome` varchar(255) DEFAULT NULL,
+  `estado_civil` char(1) DEFAULT NULL,
+  `cpf` varchar(11) DEFAULT NULL,
+  `rua` varchar(200) DEFAULT NULL,
+  `numero` varchar(10) DEFAULT NULL,
+  `bairro` varchar(150) DEFAULT NULL,
+  `estado` char(2) DEFAULT NULL,
+  `obs` text DEFAULT NULL,
+  `cidade` varchar(155) DEFAULT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB AUTO_INCREMENT=4 DEFAULT CHARSET=utf8mb4;
+
+
+
+CREATE TABLE `login` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `login` varchar(100) DEFAULT NULL,
+  `senha` varchar(100) DEFAULT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+
+
+CREATE TABLE `professor` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `cpf` varchar(15) DEFAULT NULL,
+  `data_nascimento` date DEFAULT NULL,
+  `email` varchar(150) DEFAULT NULL,
+  `telefone` varchar(20) DEFAULT NULL,
+  `formacao` varchar(100) DEFAULT NULL,
+  `cep` varchar(10) DEFAULT NULL,
+  `rua` varchar(200) DEFAULT NULL,
+  `numero` varchar(10) DEFAULT NULL,
+  `bairro` varchar(150) DEFAULT NULL,
+  `estado` char(2) DEFAULT NULL,
+  `obs` text DEFAULT NULL,
+  `cidade` varchar(155) DEFAULT NULL,
+  `sexo` char(2) DEFAULT NULL,
+  `estado_civil` varchar(50) DEFAULT NULL,
+  `nome` varchar(255) DEFAULT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB AUTO_INCREMENT=3 DEFAULT CHARSET=utf8mb4;
+
+CREATE TABLE `cadDisciplina` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `nome_disciplina` varchar(255) DEFAULT NULL,
+  `carga_horaria` varchar(255) DEFAULT NULL,
+  `tipo` varchar(255) DEFAULT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB AUTO_INCREMENT=4 DEFAULT CHARSET=utf8mb4;
+
