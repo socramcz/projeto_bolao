@@ -52,7 +52,7 @@ session_destroy();
                     <div class="row g-0" id="cardLogin">
                         <div class="col-md-6 col-lg-7 d-flex align-items-center">
                             <div class="card-body p-4 p-lg-5 text-black">
-                                <form>
+                                <form  class="user" method="post" action="_scripts/autenticar.php">
                                     <div class="d-flex align-items-center mb-3 pb-1">
                                         <i class="fa-regular fa-futbol fa-2x" style="padding-right: 1rem; color:#393f81;"></i>
                                         <span class="h1 fw-bold mb-0" style="color:#393f81;">BOLÃO 2022</span>
@@ -70,7 +70,7 @@ session_destroy();
                                         <label class="form-label" for="form2Example27">Digite sua senha</label>
                                     </div>
 
-                                    <button class="btn btn-dark btn-lg btn-block" style="margin-bottom: 2rem;" type="button">Login</button>
+                                    <button class="btn btn-dark btn-lg btn-block" style="margin-bottom: 2rem;">Login</button>
 
                                     <p class="mb-4 pb-lg-2">Não tem conta?
                                         <a href=" cadastro.php" style="color: #393f81;">Cadastre-se</a>
