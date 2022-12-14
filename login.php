@@ -72,7 +72,7 @@ session_destroy();
 
                                     <button class="btn btn-dark btn-lg btn-block" style="margin-bottom: 2rem;" type="button">Login</button>
 
-                                    <p class="mb-4 pb-lg-2"">Não tem conta?
+                                    <p class="mb-4 pb-lg-2">Não tem conta?
                                         <a href=" cadastro.php" style="color: #393f81;">Cadastre-se</a>
                                     </p>
                                     <a href="#" class="small text-muted">DEV´s FS-DUCK</a>
