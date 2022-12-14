@@ -1,18 +1,21 @@
 <div class="card mb-4">
     <div class="card-header">
         <i class="fas fa-table me-1"></i>
-        DataTable Example
+        Jogos da Copa do Mundo FIFA 2022 no Catar
     </div>
     <div class="card-body">
         <table id="datatablesSimple">
             <thead>
                 <tr>
-                    <th>Name</th>
-                    <th>Position</th>
-                    <th>Office</th>
-                    <th>Age</th>
-                    <th>Start date</th>
-                    <th>Salary</th>
+                    <th>Dia</th>
+                    <th>Horário</th>
+                    <th></th>
+                    <th>Time 1</th>
+                    <th>Placar 1</th>
+                    <th></th>
+                    <th>Placar 2</th>
+                    <th>Time 2</th>
+                    <th></th>
                 </tr>
             </thead>
             <tfoot>
