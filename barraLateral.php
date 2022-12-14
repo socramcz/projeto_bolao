@@ -26,7 +26,7 @@
                     </nav>
                 </div>
                 <a class="nav-link collapsed" href="#" data-bs-toggle="collapse" data-bs-target="#collapsePages" aria-expanded="false" aria-controls="collapsePages">
-                    <div class="sb-nav-link-icon"><i class="fas fa-book-open"></i></div>
+                    <div class="sb-nav-link-icon"><i class="fa fa-users" aria-hidden="true" style="color: green;"></i></div>
                     Ranking
                     <div class="sb-sidenav-collapse-arrow"><i class="fas fa-angle-down"></i></div>
                 </a>
@@ -53,11 +53,11 @@
                 </div>
                 <div class="sb-sidenav-menu-heading">Contribua</div>
                 <a class="nav-link" href="charts.html">
-                    <div class="sb-nav-link-icon"><i class="fas fa-chart-area"></i></div>
+                    <div class="sb-nav-link-icon"><i class="fa fa-university" aria-hidden="true" style="color: green;"></i></i></div>
                     Com pix
                 </a>
                 <a class="nav-link" href="tables.html">
-                    <div class="sb-nav-link-icon"><i class="fas fa-table"></i></div>
+                    <div class="sb-nav-link-icon"><i class="fa fa-globe" aria-hidden="true" style="color: green;"></i></div>
                     Acesse github
                 </a>
             </div>
