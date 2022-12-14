@@ -1,7 +1,7 @@
 <?php
 $servername = 'localhost';
 $username = 'root';
-$password = 'vini';
+$password = 'eds169910@@';
 $database = 'copa';
 
 // Create connection
