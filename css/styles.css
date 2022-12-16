@@ -12851,3 +12851,13 @@ body {
   font-size: 0.75rem;
   border-radius: 0.25rem !important;
 }
+
+#datatablesSimple {
+  margin: 0 auto;
+}
+
+.teste{
+  vertical-align: middle;
+  text-align: center;
+  z-index: 4000;
+}

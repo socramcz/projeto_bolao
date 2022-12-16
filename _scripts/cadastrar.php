@@ -54,7 +54,7 @@ if($total>=1){
             icon: 'error',
             confirmButtonText: 'Ok'
         })
-    </script>
+    </script>;
     <?php }
 }
 ?>

@@ -18,7 +18,7 @@
                         <div class="collapse" id="pagesCollapseAuth" aria-labelledby="headingOne" data-bs-parent="#sidenavAccordionPages">
                             <nav class="sb-sidenav-menu-nested nav">
                                 <a class="nav-link" href="login.html">Parcial</a>
-                                <a class="nav-link" href="register.html">Completa</a>
+                                <a class="nav-link" href="?r=tabela1#">Completa</a>
                             </nav>
                         </div>
                         
@@ -48,7 +48,6 @@
                         <a class="nav-link collapsed" href="#" data-bs-toggle="collapse" data-bs-target="#pagesCollapseError" aria-expanded="false" aria-controls="pagesCollapseError">
                             Nacional
                         </a>
-
                     </nav>
                 </div>
                 <div class="sb-sidenav-menu-heading">Contribua</div>

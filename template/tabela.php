@@ -9,91 +9,38 @@
                 <tr>
                     <th>Dia</th>
                     <th>Horário</th>
+                    <th>Mandante</th>
+                    <th>Placar</th>
                     <th></th>
-                    <th>Time 1</th>
-                    <th>Placar 1</th>
-                    <th></th>
-                    <th>Placar 2</th>
-                    <th>Time 2</th>
-                    <th></th>
+                    <th>Placar</th>
+                    <th>Visitante</th>
+                    <th>Estádio</th>
+                    <th>Fase</th>
+                    <th>Rodada</th>
+                    <th>Situação</th>
                 </tr>
             </thead>
-            <tfoot>
-                <tr>
-                    <th>Name</th>
-                    <th>Position</th>
-                    <th>Office</th>
-                    <th>Age</th>
-                    <th>Start date</th>
-                    <th>Salary</th>
-                </tr>
-            </tfoot>
             <tbody>
+                <?php
+                include "_scripts/config.php";
+                $sql = "SELECT * FROM jogos";
+                $query = mysqli_query($mysqli, $sql);
+                while($dados = $query->fetch_array()){
+                ?>
                 <tr>
-                    <td>Tiger Nixon</td>
-                    <td>System Architect</td>
-                    <td>Edinburgh</td>
-                    <td>61</td>
-                    <td>2011/04/25</td>
-                    <td>$320,800</td>
+                    <td><?php echo $dados['Dia']?></td>
+                    <td><?php echo $dados['Horario']?></td>
+                    <td><img src="images/<?php echo $dados['Time1'];?>.png" height="60" width="60"><?php echo $dados['Time1']?></td>
+                    <td><?php echo $dados['R1']?></td>
+                    <td>X</td>
+                    <td><?php echo $dados['R2']?></td>
+                    <td><img src="images/<?php echo $dados['Time2'];?>.png" height="60" width="60"><?php echo $dados['Time2']?></td>
+                    <td><?php echo $dados['Localidade']?></td>
+                    <td><?php echo $dados['Tipo']?></td>
+                    <td><?php echo $dados['Rodada']?></td>
+                    <td><?php echo $dados['Situacao']?></td>
                 </tr>
-                <tr>
-                    <td>Garrett Winters</td>
-                    <td>Accountant</td>
-                    <td>Tokyo</td>
-                    <td>63</td>
-                    <td>2011/07/25</td>
-                    <td>$170,750</td>
-                </tr>
-                <tr>
-                    <td>Ashton Cox</td>
-                    <td>Junior Technical Author</td>
-                    <td>San Francisco</td>
-                    <td>66</td>
-                    <td>2009/01/12</td>
-                    <td>$86,000</td>
-                </tr>
-                <tr>
-                    <td>Cedric Kelly</td>
-                    <td>Senior Javascript Developer</td>
-                    <td>Edinburgh</td>
-                    <td>22</td>
-                    <td>2012/03/29</td>
-                    <td>$433,060</td>
-                </tr>
-                <tr>
-                    <td>Airi Satou</td>
-                    <td>Accountant</td>
-                    <td>Tokyo</td>
-                    <td>33</td>
-                    <td>2008/11/28</td>
-                    <td>$162,700</td>
-                </tr>
-                <tr>
-                    <td>Brielle Williamson</td>
-                    <td>Integration Specialist</td>
-                    <td>New York</td>
-                    <td>61</td>
-                    <td>2012/12/02</td>
-                    <td>$372,000</td>
-                </tr>
-                <tr>
-                    <td>Herrod Chandler</td>
-                    <td>Sales Assistant</td>
-                    <td>San Francisco</td>
-                    <td>59</td>
-                    <td>2012/08/06</td>
-                    <td>$137,500</td>
-                </tr>
-                <tr>
-                    <td>Rhona Davidson</td>
-                    <td>Integration Specialist</td>
-                    <td>Tokyo</td>
-                    <td>55</td>
-                    <td>2010/10/14</td>
-                    <td>$327,900</td>
-                </tr>
-
+                <?php } ?>
             </tbody>
         </table>
     </div>

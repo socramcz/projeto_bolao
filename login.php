@@ -40,7 +40,6 @@ session_destroy();
     <link href="css/sb-admin-2.min.css" rel="stylesheet">
     <link href="css/styles.css" rel="stylesheet" />
     <script src="https://use.fontawesome.com/releases/v6.1.0/js/all.js" crossorigin="anonymous"></script>
-    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 
 
 </head>
@@ -62,12 +61,12 @@ session_destroy();
                                     <h5 class="fw-normal mb-3 pb-3" style="letter-spacing: 1px;">Entre na sua conta</h5>
 
                                     <div class="form-outline mb-4 form-group">
-                                        <input type="email" id="form2Example17" class="form-control form-control-lg" required />
+                                        <input type="email" name="email" id="form2Example17" class="form-control form-control-lg" required />
                                         <label class="form-label" for="form2Example17">Digite seu email</label>
                                     </div>
 
                                     <div class="form-outline mb-4 form-group">
-                                        <input type="password" id="form2Example27" class="form-control form-control-lg" required />
+                                        <input type="password" name="senha" id="form2Example27" class="form-control form-control-lg" required />
                                         <label class="form-label" for="form2Example27">Digite sua senha</label>
                                     </div>
 

@@ -30,8 +30,7 @@ session_start();
                 }
             })
         </script>
-
-<?php } else {
+        <?php } else {
         $sql = "SELECT id FROM palpiteiro WHERE Email = '$email' and Senha = '$senha'";
         $query = mysqli_query($mysqli, $sql);
         $total = $query->num_rows;
@@ -51,9 +50,14 @@ session_start();
             </script>
     <?php } else {
             $_SESSION['email'] = $email;
-            location.href = "../login.php";
+            echo "<script>window.location.href='../index.php';</script>";
         }
     }
+
+
+
+
+
 
     ?>
 </body>

@@ -24,6 +24,10 @@
                             include "template/aposta.php";
                             break;
 
+                        case 'tabela1':
+                            include "template/tabela.php";
+                            break;
+
                         default:
                         include "template/index.php";
                         include "cards.php";
