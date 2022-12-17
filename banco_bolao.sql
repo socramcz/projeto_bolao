@@ -1,3 +1,4 @@
+-- Active: 1667663652772@@127.0.0.1@3306@copa
 CREATE DATABASE copa;
 
 CREATE TABLE IF NOT EXISTS palpiteiro(

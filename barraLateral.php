@@ -55,7 +55,7 @@
                     <div class="sb-nav-link-icon"><i class="fa fa-university" aria-hidden="true" style="color: green;"></i></i></div>
                     Com pix
                 </a>
-                <a class="nav-link" href="tables.html">
+                <a class="nav-link" href="https://github.com/socramcz/projeto_bolao">
                     <div class="sb-nav-link-icon"><i class="fa fa-globe" aria-hidden="true" style="color: green;"></i></div>
                     Acesse github
                 </a>
