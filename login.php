@@ -75,7 +75,7 @@ session_destroy();
                                     <p class="mb-4 pb-lg-2">Não tem conta?
                                         <a href=" cadastro.php" style="color: #393f81;">Cadastre-se</a>
                                     </p>
-                                    <a href="#" class="small text-muted">DEV´s FS-DUCK</a>
+                                    <a href="#" class="small text-muted">Fullstack.duck 2022</a>
                                 </form>
 
                             </div>

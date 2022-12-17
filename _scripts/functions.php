@@ -1,11 +1,11 @@
 <?php
     function dadosUser($email){
-    include "config.php";
-    $sql = "SELECT usuario FROM palpiteiro WHERE usuario = '$email'";
-    $query = $mysqli->query($sql);
-    $dados = $query->fetch_array();
+        include "config.php";
+        $sql = "SELECT usuario FROM palpiteiro WHERE usuario = '$email'";
+        $query = $mysqli->query($sql);
+        $dados = $query->fetch_array();
 
-    return $dados['login'];
+        return $dados['login'];
 
     function validarUsuario($cpf,$tabela){
         include "config.php";
