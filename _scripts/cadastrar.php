@@ -42,7 +42,7 @@ Swal.fire({
                             icon: 'sucess',
                             confirmButtonText: 'Ok'
                         })
-                        <?php header('Location: ../login.php') ?>
+                        <?php header('Location: ../login.php'); ?>
                     }
                 })
         </script>
@@ -55,6 +55,7 @@ Swal.fire({
     icon: 'error',
     confirmButtonText: 'Ok'
 })
+<?php header('Location: ../cadastro.php'); ?>
 </script>;
 <?php }
 }
