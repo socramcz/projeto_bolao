@@ -42,7 +42,7 @@ if($total>=1){
                             icon: 'sucess',
                             confirmButtonText: 'Ok'
                         })
-                        location.href = "../login.php";
+                        <?php header('Location: ../login.php') ?>
                     }
                 })
         </script>
