@@ -22,9 +22,9 @@ Swal.fire({
     confirmButtonText: 'Ok'
 })
 </script>;
-}
+
 <?php } else {
-    $sql = "INSERT INTO palpiteiro values (NULL, '$email', '$usuario','$senha',0)";
+    $sql = "INSERT INTO palpiteiro values (NULL, '$email', '$usuario','$senha')";
     $query = mysqli_query($mysqli, $sql);
     
     if($query){?>
