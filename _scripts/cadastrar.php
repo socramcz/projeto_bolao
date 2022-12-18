@@ -12,19 +12,19 @@ $total = $query->num_rows;
 
 
 
-if($total>=1){
-    ?>
-        <script type="text/javascript">
-        Swal.fire({
-            title: 'Ops!',
-            text: 'Usuario ja cadastrado',
-            icon: 'error',
-            confirmButtonText: 'Ok'
-        })
-    </script>;
-    }
-<?php }else{
-    $sql = "INSERT INTO palpiteiro values (NULL, '$email', '$usuario','$senha')";
+if ($total >= 1) {
+?>
+<script type="text/javascript">
+Swal.fire({
+    title: 'Ops!',
+    text: 'Usuario ja cadastrado',
+    icon: 'error',
+    confirmButtonText: 'Ok'
+})
+</script>;
+}
+<?php } else {
+    $sql = "INSERT INTO palpiteiro values (NULL, '$email', '$usuario','$senha',0)";
     $query = mysqli_query($mysqli, $sql);
     
     if($query){?>
@@ -46,15 +46,16 @@ if($total>=1){
                     }
                 })
         </script>
-    <?php }else{ ?>
-        <script type="text/javascript">
-        Swal.fire({
-            title: 'Ops!',
-            text: 'Erro no banco de dados',
-            icon: 'error',
-            confirmButtonText: 'Ok'
-        })
-    </script>;
-    <?php }
+  >
+<?php } else { ?>
+<script type="text/javascript">
+Swal.fire({
+    title: 'Ops!',
+    text: 'Erro no banco de dados',
+    icon: 'error',
+    confirmButtonText: 'Ok'
+})
+</script>;
+<?php }
 }
 ?>
