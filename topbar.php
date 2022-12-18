@@ -15,7 +15,7 @@
                 <li>
                     <hr class="dropdown-divider" />
                 </li>
-                <li><a class="dropdown-item" href="#!">Sair</a></li>
+                <li><a class="dropdown-item" href="./_scripts/sair.php">Sair</a></li>
             </ul>
         </li>
     </ul>

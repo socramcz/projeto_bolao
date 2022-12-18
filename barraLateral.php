@@ -1,4 +1,12 @@
-<?php include "header.php" ?>
+<?php 
+
+session_start();
+include "header.php";
+include_once('_scripts/config.php');
+
+$user = $_SESSION['email'];
+
+?>
 <div id="layoutSidenav_nav">
     <nav class="sb-sidenav accordion sb-sidenav-dark" id="sidenavAccordion">
         <div class="sb-sidenav-menu">
@@ -34,13 +42,13 @@
                 <a class="nav-link" href="https://github.com/socramcz/projeto_bolao">
                     <div class="sb-nav-link-icon"><i class="fa fa-globe" aria-hidden="true" style="color: green;"></i>
                     </div>
-                    Acesse github
+                    Acesse GitHub
                 </a>
             </div>
         </div>
         <div class="sb-sidenav-footer">
             <div class="small">Logado como:</div>
-            (usuario)
+            <?php $user ?>
         </div>
     </nav>
 </div>
