@@ -1,6 +1,7 @@
 <?php
 session_start();
 
+$user = $_SESSION['email']
 
 ?>
 <html>
@@ -15,7 +16,7 @@ session_start();
     include "config.php";
     
     date_default_timezone_set('America/Sao_Paulo');
-    $login = '';
+    $login = $user;
     $data = date("Y-m-d H:i:s");
     $rodada = $_POST['rodada'];
        
