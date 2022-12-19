@@ -33,12 +33,12 @@ $user = $_SESSION['email'];
                 </div>
 
 
-                <div class="sb-sidenav-menu-heading">Contribua</div>
-                <a class="nav-link" href="charts.html">
+                <div class="sb-sidenav-menu-heading">Apoie</div>
+                <!-- <a class="nav-link" href="charts.html">
                     <div class="sb-nav-link-icon"><i class="fa fa-university" aria-hidden="true"
                             style="color: green;"></i></i></div>
                     Com pix
-                </a>
+                </a> -->
                 <a class="nav-link" href="https://github.com/socramcz/projeto_bolao">
                     <div class="sb-nav-link-icon"><i class="fa fa-globe" aria-hidden="true" style="color: green;"></i>
                     </div>
