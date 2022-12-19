@@ -25,12 +25,15 @@
                 <tbody>
                     <?php
                     include "_scripts/config.php";
-                    $sql = "SELECT * FROM jogos";
-                    $query = mysqli_query($mysqli, $sql);
+                    $sql = "SELECT * FROM jogos WHERE situacao = 'ABERTO'";
+                    $query = $mysqli->query($sql);
                     $i = 1;
-
+                    $j = 1;
+                    $a = 1;
                     while ($dados = $query->fetch_array()) {
                     ?>
+                    <input type="hidden" name="jogo<?php echo $a; ?>" value="<?php echo $dados['Id']; ?>">
+                   
                     <tr>
                         <td name='dia' style="text-align: center; vertical-align: middle"><?php echo $dados['dia'] ?>
                         </td>
@@ -50,7 +53,7 @@
                                 </div>
                                 <div class="ms-3">
                                     <input type="text" placeholder="<?php echo $dados['timeb'] ?>" class="form-control"
-                                        name="timeb<?php echo $i; ?>" style="text-align: center">
+                                        name="timeb<?php echo $j; ?>" style="text-align: center">
                                 </div>
                             </div>
                         </td>
@@ -62,7 +65,7 @@
                             <?php echo $dados['rodada'] ?></td>
                         <td style="text-align: center; vertical-align: middle"><?php echo $dados['situacao'] ?></td>
                     </tr>
-                    <?php $i++;
+                    <?php $i++; $j++; $a++;;
                     } ?>
                 </tbody>
                 <div>

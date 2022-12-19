@@ -22,7 +22,7 @@ $user = $_SESSION['email'];
                     data-bs-parent="#sidenavAccordion">
                     <nav class="sb-sidenav-menu-nested nav">
                         <a class="nav-link" href="?r=aposta#">Apostar</a>
-                        <a class="nav-link " href="?r=tabela1#" data-bs-toggle="collapse"
+                        <a class="nav-link " href="/template/tabela.php" data-bs-toggle="collapse"
                             data-bs-target="#pagesCollapseAuth" aria-expanded="false" aria-controls="pagesCollapseAuth">
                             Tabela
                             <div class="sb-sidenav-collapse-arrow"><i></i></div>
@@ -33,12 +33,13 @@ $user = $_SESSION['email'];
                 </div>
 
 
-                <div class="sb-sidenav-menu-heading">Apoie</div>
-                <!-- <a class="nav-link" href="charts.html">
-                    <div class="sb-nav-link-icon"><i class="fa fa-university" aria-hidden="true"
+                <div class="sb-sidenav-menu-heading">OUTRAS OPÇÕES</div>
+               <a class="nav-link" href="./_scripts/sair.php">
+                    <div  class="sb-nav-link-icon"><i class="fa fa-sign-out" aria-hidden="true"
                             style="color: green;"></i></i></div>
-                    Com pix
-                </a> -->
+                    Sair
+                    
+                </a>
                 <a class="nav-link" href="https://github.com/socramcz/projeto_bolao">
                     <div class="sb-nav-link-icon"><i class="fa fa-globe" aria-hidden="true" style="color: green;"></i>
                     </div>
