@@ -49,7 +49,7 @@ $user = $_SESSION['email'];
         </div>
         <div class="sb-sidenav-footer">
             <div class="small">Logado como:</div>
-            <?php $user ?>
+            <?php echo $user ?>
         </div>
     </nav>
 </div>
