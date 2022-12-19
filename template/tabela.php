@@ -28,17 +28,17 @@
                 while($dados = $query->fetch_array()){
                 ?>
                 <tr>
-                    <td><?php echo $dados['Dia']?></td>
-                    <td><?php echo $dados['Horario']?></td>
-                    <td><img src="images/<?php echo $dados['Time1'];?>.png" height="60" width="60"><?php echo $dados['Time1']?></td>
-                    <td><?php echo $dados['R1']?></td>
+                    <td><?php echo $dados['dia']?></td>
+                    <td><?php echo $dados['horario']?></td>
+                    <td><img src="images/<?php echo $dados['timea'];?>.png" height="60" width="60"><?php echo $dados['timea']?></td>
+                    <td><?php echo $dados['r1']?></td>
                     <td>X</td>
-                    <td><?php echo $dados['R2']?></td>
-                    <td><img src="images/<?php echo $dados['Time2'];?>.png" height="60" width="60"><?php echo $dados['Time2']?></td>
-                    <td><?php echo $dados['Localidade']?></td>
-                    <td><?php echo $dados['Tipo']?></td>
-                    <td><?php echo $dados['Rodada']?></td>
-                    <td><?php echo $dados['Situacao']?></td>
+                    <td><?php echo $dados['r2']?></td>
+                    <td><img src="images/<?php echo $dados['timeb'];?>.png" height="60" width="60"><?php echo $dados['timeb']?></td>
+                    <td><?php echo $dados['localidade']?></td>
+                    <td><?php echo $dados['tipo']?></td>
+                    <td><?php echo $dados['rodada']?></td>
+                    <td><?php echo $dados['situacao']?></td>
                 </tr>
                 <?php } ?>
             </tbody>
