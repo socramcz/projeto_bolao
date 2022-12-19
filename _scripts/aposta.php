@@ -36,7 +36,7 @@ session_start();
                 confirmButtonText: 'Ok'
             }).then((result) => {
                 if (result.isConfirmed) {
-                    location.href = "../index.php";
+                    <?php header('Location: ./index.php'); ?>
                 }
             })
         </script>

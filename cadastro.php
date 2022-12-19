@@ -33,7 +33,7 @@
                                 <h5 class="fw-normal mb-3 pb-3" style="letter-spacing: 1px;">Seja bem-vindo</h5>
 
                                 <div class="form-outline mb-4 form-group">
-                                    <label class="form-label" for="form2Example17">Digite seu usuario</label>
+                                    <label class="form-label" for="form2Example17">Digite seu usuário</label>
                                     <input type="text" id="exampleInputEmail" class="form-control form-control-user" name="usuario" required />
                                 </div>
 
